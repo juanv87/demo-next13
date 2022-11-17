@@ -6,6 +6,15 @@ export const ultimasNoticias = `
           id
           title
           slug
+          featuredImage {
+            node {
+              sourceUrl(size: MEDIUM_LARGE)
+            }
+          }
+          campos {
+            descripcionDestacado
+            volanta
+          }
           categories {
             edges {
               node {

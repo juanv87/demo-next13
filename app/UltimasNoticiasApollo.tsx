@@ -25,7 +25,7 @@ export const GET_ULTIMAS_NOTICIAS = gql`
   }
 `;
 
-const UltimasNoticias = () => {
+const UltimasNoticiasApollo = () => {
   const { data, loading, error } = useQuery(GET_ULTIMAS_NOTICIAS);
   return (
     <section>
@@ -45,4 +45,4 @@ const UltimasNoticias = () => {
   )
 }
 
-export default UltimasNoticias
+export default UltimasNoticiasApollo
