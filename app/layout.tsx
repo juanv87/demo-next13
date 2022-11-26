@@ -1,4 +1,4 @@
-import Navigation from "./components/Navigation";
+import Header from "./components/ui/Header";
 import '../styles/globals.css'
 import ApolloProviderWrapper from "./ApolloProvider";
 
@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
     <html>
       <body>
         <ApolloProviderWrapper>
-          <Navigation />
+          <Header />
           {children}
         </ApolloProviderWrapper>
       </body>

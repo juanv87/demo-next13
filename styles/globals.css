@@ -7,6 +7,19 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --aniversarios: #333;
+  --politicas: #e64a19;
+  --mujer: #8bc34a;
+  --ambiente: #587c2f;
+  --internacionales: #880e4f;
+  --juventud: #512da8;
+  --sindicales: #ff9800;
+  --rojoprensa: #f44336;
+  --cultura: #1976d2;
+  --educacion: #E72679;
+  --movimiento-piquetero: #000;
+  --libertades-democraticas: #00796b;
+  --opinion: #666;
 }
 
 a {

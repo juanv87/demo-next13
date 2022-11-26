@@ -1,12 +1,14 @@
 import React, { Suspense } from 'react'
+import Container from './components/Container'
 import UltimasNoticias from './components/UltimasNoticias'
 
 const page = () => {
   return (
     <>
-      <div>Home</div>
       <Suspense fallback={<div>Loading...</div>}>
-        <UltimasNoticias />
+        <Container>
+          <UltimasNoticias />
+        </Container>
       </Suspense>
     </>
   )

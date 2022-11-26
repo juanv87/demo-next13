@@ -6,7 +6,7 @@ import getUltimasNoticias from "../services/getUltimasNoticias";
 const UltimasNoticias = async () => {
   const posts = await getUltimasNoticias(15);
   return (
-    <section className="grid grid-cols-12">
+    <section className="grid gap-4 grid-cols-12">
       {posts.edges.map(
         ({
           node: {
@@ -26,15 +26,16 @@ const UltimasNoticias = async () => {
             },
           },
         }) => (
-          <TarjetaCuadradaConFoto
-            key={id}
-            slug={slug}
-            title={title}
-            seccion={seccion}
-            descripcionDestacado={descripcionDestacado}
-            volanta={volanta}
-            imagen={sourceUrl}
-          />
+          <div key={id} className="col-span-12 md:col-span-3">
+            <TarjetaCuadradaConFoto
+              slug={slug}
+              title={title}
+              seccion={seccion}
+              descripcionDestacado={descripcionDestacado}
+              volanta={volanta}
+              imagen={sourceUrl}
+            />
+          </div>
         )
       )}
     </section>

@@ -1,7 +1,7 @@
 import { ultimasNoticias } from "./ultimasNoticias"
 
 const getUltimasNoticias = (first) => {
-  return fetch('https://admin.prensaobrera.com/graphql', {
+  return fetch(process.env.WORDPRESS_API_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
